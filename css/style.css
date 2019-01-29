@@ -1,0 +1,405 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    background-color: #444;
+    position: fixed;
+}
+
+.navbar a {
+    width: 100%;
+    height: 45px;
+    color: aliceblue;
+    background-color: #444;
+}
+
+nav a:hover {
+    color: aqua;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    max-width: 1180px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+.about-us h1{
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    font-size: 70px;
+    color: aliceblue;
+}
+
+.about-us{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url("../img/pexels-photo-533923.jpeg") no-repeat center/cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-us p, .about-us h3{
+    color: aliceblue;
+}
+
+.card-deck {
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.fotter-bottom{
+    background-color: #00a9cd;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.about-traveling{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../img/pexels-photo-533923.jpeg") no-repeat center/cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.form-site{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../img/pexels-photo-533923.jpeg") no-repeat center/cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-traveling h1{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 10rem;
+    color: white;
+}
+
+.about-traveling p{
+    padding-top: 5rem;
+    color: white;
+}
+
+.costumers img{
+    padding: 0.5rem;
+}
+
+.costumers p{
+    color: white;
+}
+
+.form-control{
+    margin-bottom: 1rem;
+}
+
+.form-group{
+    color: white;
+}
+
+/*form pocetak*/
+.forma{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../img/pexels-photo-533923.jpeg") no-repeat center/cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden; 
+}
+.container{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.brand{
+    text-align: center;
+}
+
+.brand span{
+    color: white;
+}
+
+.wrapper{
+    box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+}
+
+.wrapper > *{
+    padding: 1em;
+}
+
+.company-info{
+    background: #c9e6ff;
+}
+
+.company-info h3, .company-info ul{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.contact{
+    background: #f9feff;
+}
+
+/*Form Style*/
+.contact form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.contact form label{
+    display: block; /*formovi iste sirine*/
+}
+
+.contact form p{
+    margin: 0;
+}
+
+.contact form .full{
+    grid-column: 1 / 3;
+}
+
+.contact form button, .contact form input, .contact form textarea{
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #c9e6ff;
+}
+
+.contact form button{
+    background: #c9e6ff;
+    border: 0;
+    text-transform: uppercase;
+}
+
+.contact form button:hover, .contact form button:focus{
+    background: #92bde7;
+    color: white;
+    outline: 0;
+    transition: background-color 2s ease-out;
+}
+
+/*Large screen*/
+
+@media(min-width:700px){
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .wrapper > *{
+        padding: 2em;
+    }
+
+    .company-info h3, .company-info ul, .brand{
+        text-align: left;
+    }
+}
+/*form kraj*/
+
+/*kartice social media*/
+
+
+@font-face{
+    font-family: 'Genericons';
+    src: url('../fonts/genericons-regular-webfont.woff')format('woff'), url('../fonts/genericons-regular-webfont.eot')format('truetype')
+}
+header h1{
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.accordion{
+    background: #00a9cd;
+    width: 100%;
+    min-width: 800px;
+    display: block;
+    list-style-type: none;
+    overflow: hidden;
+    height: 200px;
+    font-size: 0px; /*poslje dodajemo velicinu fonta*/
+}
+
+.tab{
+    display: inline-block;
+    background-color: aqua;
+    border-right: #333 solid 1px;
+    width: 80px;
+    height: 200px; /*isto kao i u classi accordion*/
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    transition: all 0.5s ease-in-out 0.1s; /*animacija*/
+}
+
+.tab:hover {
+    width: 450px;
+}
+
+.tab:hover .social a:before{
+    margin-left: -100px; /*prva ikona ide lijevo*/
+}
+
+.tab:hover .social a:after{
+    margin-left: -5px; /*prva ikona ide lijevo*/
+}
+
+
+.tab .content{/*poravnanje teksta i boje*/
+    background: white;
+    width: 360px;
+    height: 200px;
+    margin-left: 80px;
+    position: relative;
+    padding: 50px 0 0 15px;
+}
+
+.tab .content h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.tab .content p{
+    font-size: 0.85rem;
+    line-height: 1.4rem;
+    padding-right: 30px;
+}
+
+.social a:before,
+.social a:after{
+    transition: all 0.4s ease-in-out 0.1s; /*transicija za ikone*/
+    width: 80px;
+    height: 200px;
+    position: absolute;
+    text-indent: 0;
+    padding-top: 90px;
+    padding-left: 25px;
+    display: block;
+    font: normal 30px Genericons;
+    color: #fff;
+}
+
+.social a:after{
+    font-size: 48px;
+    padding-left: 20px;
+    padding-top: 80px;
+    margin-left: 85px;
+}
+
+/*ikone*/
+.youtube a:before,
+.youtube a:after{
+    content: '\f213'
+}
+
+.youtube a:after{
+    background-color: #ff0000;
+}
+
+.twitter a:before,
+.twitter a:after{
+    content: '\f202'
+}
+
+.twitter a:after{
+    background-color: #6dc5dd;
+}
+
+.facebook a:before,
+.facebook a:after{
+    content: '\f204'
+}
+
+.facebook a:after{
+    background-color: #3b5998;
+}
+
+.linkedin a:before,
+.linkedin a:after{
+    content: '\f208'
+}
+
+.linkedin a:after{
+    background-color: #00a9cd;
+}
+
+.instagram a:before,
+.instagram a:after{
+    content: '\f215'
+}
+
+.instagram a:after{
+    background-color: #6dc993;
+}
+
+.github a:before,
+.github a:after{
+    content: '\f200'
+}
+
+.github a:after{
+    background-color: #6e5494;
+}
+
+/*ne radi treba pogledat*/
+
+@media(max-width: 950px){
+    .container{
+        width: 70px;
+    }
+    
+    .tab{
+        display: block;
+        width: 100%;
+        border-bottom: 3px #333 solid;
+    }
+
+    .accordion{
+        display: block;
+        min-width: 450px;
+        height: auto;
+    }
+
+    .tab .content{
+        width: 85%;
+    }
+
+    .tab:hover{
+        width: 100%
+    }
+}
+
+@media(max-width:650px){
+    .container{
+        width: 95px;
+    }
+
+    .accordion{
+        width: 100%;
+        min-width: 350px;
+    }
+}

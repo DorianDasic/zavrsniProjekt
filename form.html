@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
+    <title>Document</title>
+</head>
+<body>
+    <!--NavBar-->
+    <div class="navbar">
+        <nav class="">
+          <div class="container">
+            <div class="nav-wrapper">
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link" href="./home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./destinations.html">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./prices.html">Prices</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./form.html">Form</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="forma">
+      <div class="container">
+            <div class="wrapper animated bounceInLeft">
+                <div class="company-info">
+                    <h3>Travelville</h3>
+                    <ul>
+                        <li><i class="fa fa-road"></i> 44 Therefore St</li>
+                        <li><i class="fa fa-phone"></i> 091 5923 222</li>
+                        <li><i class="fa fa-envelope"></i>reques@travelville.com</li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h3>Fill out your Form</h3>
+                    <form>
+                        <p>
+                            <label>Name</label>
+                            <input type="text" name="name" id="">
+                        </p>
+                        <p>
+                            <label>Email</label>
+                            <input type="email" name="email" id="">
+                        </p>
+                        <p>
+                            <label>Starting Position</label>
+                            <input type="text" name="stpos" id="">
+                        </p>
+                        <p>
+                            <label>Destination</label>
+                            <input type="text" name="endpos" id="">
+                        </p>
+                        <p class="full">
+                            <label>Addiotional Information</label>
+                            <textarea name="message" rows="5"></textarea>
+                        </p>
+                        <p class="full">
+                            <button type="submit" name="submit">Submit</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <?php
+        if(isset($_POST['submit'])){
+            $name = $_post['name'];
+            $email = $_post['email'];
+            $stpos = $_post['stpos'];
+            $endpos = $_post['endpos'];
+            $message = $_post['message'];
+
+            $mymail = "reques@travelville.com"
+            $headers = "From: ".$email;
+            $text = "You have recevied traveling form from ".$name.
+
+            mail($mymail, $stpos, $endpos, $text);
+            header("Location: form.php?mailsend");
+        }
+    ?>
+</body>
+</html>
